@@ -47,7 +47,21 @@ h2 {
     margin-bottom: 5px;
     border-radius: 5px;
     background: darkred;
-    margin-bottom: 20px;
+    margin-bottom: 3px;
     margin-top: 7px;
 
+}
+#delete {
+align-self: center;
+border: none;
+padding-top: 7px;
+padding-bottom: 10px;
+color: white;
+font-weight: bold;
+width: 200px;
+margin-bottom: 5px;
+border-radius: 5px;
+background: darkgoldenrod;
+margin-bottom: 20px;
+margin-top: 7px;
 }

@@ -10,3 +10,8 @@ function countDOWN() {
     let counter = document.getElementById('counter')
     counter.innerText = count
 }
+function deleteALL() {
+    count = count - count
+    let counter = document.getElementById('counter')
+    counter.innerText = count
+}
