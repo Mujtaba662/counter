@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Counter</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Counter</h1>
-    <h2 id="counter">0</h2>
-    <div><button id="increase" onclick="countUP()">increase</button></div>
-    <div><button id="decrease" onclick="countDOWN()">decrease</button></div>
-    <div><button id="delete" onclick="deleteALL()">delete</button></div>
-    <div><button id="saving" onclick="saveCOUNT()">save</button></div>
-    <h3><p id="save">Previous enteries: </p></h3>
-    <div><button id="deleteentries" onclick="deleteENTRIES()">Delete previous entries.</button></div>
+<body> 
+    <span id="num1-el"></span>
+    <span id="num2-el"></span>
+    <br>
+    <button onclick="add()">Add</button>
+    <button onclick="min()">Subtract</button>
+    <button onclick="dv()">Divide</button>
+    <button onclick="mul()">Multiply</button>
+    <br>
+    <span id="sum">Sum: </span>
+    <br>
+    <button onclick="del()">Delete</button>
     <script src="index.js"></script>
 </body>
 </html>

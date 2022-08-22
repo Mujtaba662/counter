@@ -1,29 +1,31 @@
-let count = 0
+let num1 = 8
+let num2 = 2
+document.getElementById("num1-el").textContent = num1
+document.getElementById("num2-el").textContent = num2
 
-function countUP() {
-    count += 1
-    let counter = document.getElementById('counter')
-    counter.innerText = count
+function add() {
+    count = num1 + num2
+    let sum = document.getElementById('sum')
+    sum.textContent += count + " "
 }
-function countDOWN() {
-    count -= 1 
-    let counter = document.getElementById('counter')
-    counter.innerText = count
+function min() {
+    count = num1 - num2
+    let sum = document.getElementById('sum')
+    sum.textContent += count + " "
 }
-function deleteALL() {
-    count = count - count
-    let counter = document.getElementById('counter')
-    counter.innerText = count
+function mul() {
+    count = num1 * num2
+    let sum = document.getElementById('sum')
+    sum.textContent += count + " "
 }
-function saveCOUNT() {
-    count = count 
-    let save = document.getElementById('save')
-    save.innerText += " " + count
-    count = 0
-    let counter = document.getElementById('counter')
-    counter.innerText = 0
+function dv() {
+    count = num1 / num2
+    let sum = document.getElementById('sum')
+    sum.textContent += count + " "
 }
-function deleteENTRIES() {
-    let save = document.getElementById('save')
-    save.innerText = "Previous enteries: "
+function del() {
+    count = "Sum: "
+    let sum = document.getElementById('sum')
+    sum.textContent = count
 }
+
