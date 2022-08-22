@@ -1,31 +1,70 @@
-let num1 = 8
-let num2 = 2
-document.getElementById("num1-el").textContent = num1
-document.getElementById("num2-el").textContent = num2
+let count = 0
+let gettingDATA = JSON.parse(localStorage.getItem("count"))
+if (gettingDATA) {
+    let previousENTRY = document.getElementById("save")
+    previousENTRY.textContent += gettingDATA
+}
+function countUP() {
+    count += 1
+    let counter = document.getElementById('counter')
+    counter.innerText = count
+}
+function countDOWN() {
+    count -= 1 
+    let counter = document.getElementById('counter')
+    counter.innerText = count
+}
+function deleteALL() {
+    count = count - count
+    let counter = document.getElementById('counter')
+    counter.innerText = count
+}
+function saveCOUNT() {
+    count = count 
+    let save = document.getElementById('save')
+    localStorage.setItem("count", JSON.stringify(count))
+    save.innerText += " " + count
+    count = 0
+    let counter = document.getElementById('counter')
+    counter.innerText = 0
+}
+function deleteENTRIES() {
+    let save = document.getElementById('save')
+    save.innerText = "Previous enteries: "
+}
 
-function add() {
-    count = num1 + num2
-    let sum = document.getElementById('sum')
-    sum.textContent += count + " "
-}
-function min() {
-    count = num1 - num2
-    let sum = document.getElementById('sum')
-    sum.textContent += count + " "
-}
-function mul() {
-    count = num1 * num2
-    let sum = document.getElementById('sum')
-    sum.textContent += count + " "
-}
-function dv() {
-    count = num1 / num2
-    let sum = document.getElementById('sum')
-    sum.textContent += count + " "
-}
-function del() {
-    count = "Sum: "
-    let sum = document.getElementById('sum')
-    sum.textContent = count
-}
+// JUST FOR PRACTICE I WROTE THE WHOLE CODE AGAIN WITHOUT SEEING OTHER WISE THE CODE IS SAME
 
+
+
+
+
+
+
+// let count = 0 
+// function countUP() {
+//     count += 1
+//     let counter = document.getElementById('counter')
+//     counter.innerHTML = count
+// }
+// function countDOWN() {
+//     count -= 1
+//     let counter = document.getElementById('counter')
+//     counter.innerHTML = count
+// }
+// function deleteALL() {
+//     count = count - count
+//     let counter = document.getElementById('counter')
+//     counter.innerHTML = count
+// }
+// function saveCOUNT() {
+//     let save = document.getElementById('save')
+//     save.innerHTML += " " + count
+//     count = 0 
+//     let counter = document.getElementById('counter')
+//     counter.innerText = 0
+// }
+// function deleteENTRIES() {
+//     let save = document.getElementById('save')
+//     save.innerHTML = "Previous entries: "
+// }
